@@ -1,9 +1,10 @@
-import React from 'react';
 import { Outlet, Link } from "react-router-dom";
 import { BsSearch } from "react-icons/bs";
 import { GiShoppingCart } from "react-icons/gi";
 import { SlLogin } from "react-icons/sl";
+
 const Home = () => {
+
     return (
         <div>
             <header className="header1 flex flex-wrap justify-around text-white items-center  ">
@@ -24,11 +25,11 @@ const Home = () => {
                 <div className="flex flex-wrap justify-between space-x-16 mr-4">
                     {/* menu */}
                     <div className="navigate flex space-x-7 flex-wrap justify-center">
-                        <Link to={`1`}><span className='hover:text-green-700 font-bold font-menu text-gray-500'>Introduce</span></Link>
-                        <Link to={`2`}><span className='hover:text-green-700 font-bold font-menu text-gray-500'>Product</span></Link>
-                        <Link to={`3`}><span className='hover:text-green-700 font-bold font-menu text-gray-500'>Blog</span></Link>
-                        <Link to={`4`}><span className='hover:text-green-700 font-bold font-menu text-gray-500'>Contact  </span></Link>
-                        <Link to={`5`}><span className='hover:text-green-700 font-bold font-menu text-gray-500'>Image</span></Link>
+                        <Link to={`1`}><span className='hover:text-green-700 font-medium font-menu text-gray-500'>Introduce</span></Link>
+                        <Link to={`2`}><span className='hover:text-green-700 font-medium font-menu text-gray-500'>Product</span></Link>
+                        <Link to={`3`}><span className='hover:text-green-700 font-medium font-menu text-gray-500'>Blog</span></Link>
+                        <Link to={`4`}><span className='hover:text-green-700 font-medium font-menu text-gray-500'>Contact  </span></Link>
+                        <Link to={`5`}><span className='hover:text-green-700 font-medium font-menu text-gray-500'>Image</span></Link>
                     </div>
                     <div className="flex space-x-8 justify-center">
                         {/* cart */}
@@ -47,27 +48,41 @@ const Home = () => {
             <main>
                 <Outlet />
             </main>
-            <footer className='mt-10'>
-                <hr />
-                <div className="container">
-                    <div>TRANG CHIA SẺ TÀI LIỆU HỌC LẬP TRÌNH TRỰC TUYẾN MIỄN PHÍ</div>
-                    <div><span>:</span><span></span></div>
-                    <div>Chúng tôi chuyên cung cấp các bài viết thuộc lĩnh vực lập trình web, tài liệu hướng dẫn học HTML, CSS, Javascript, jQuery, MySQL, PHP.</div>
-                    <div>
-                        <div>©2016 Bản quyền thuộc về <u>webcoban.vn</u></div>
-                        <div>
-                            <Link to={"https://www.dmca.com/Protection/Status.aspx?ID=a9ed0b5b-9ca8-4296-9ea8-7a325ebb0c78&amp;refurl=https://webcoban.vn/html/the-footer-trong-html.html"} title="DMCA.com Protection Status" className="dmca-badge fa fa-rss fa-lg" target="_blank" />
+            <hr />
+            <footer className="flex justify-center flex-wrap space-x-20">
+                <div className="w-[300px] mt-0">
+                    <p className="text-xl text-center fontFooter text-green-600">WEBCAYCANH . CO., LTD</p>
+                    <p className="text-sm mb-3">Office: No. 3, Hoang Loc Street, Area 17, Hai Duong City</p>
+                    <p className="text-sm mb-3"> Representative: Nguyen Minh Huy</p>
+                    <p className="text-sm mb-3">Tax code: 0801244382</p>
+                    <p className="text-sm mb-3"> webcaycanhhot@gmail.com</p>
+                    <p className="text-sm mb-3"> Reflect: 0966561589</p>
+                </div>
+                <div className="w-[300px] mt-0">
+                    <p className="text-xl text-center fontFooter text-green-600">Wholesale and retail address</p>
+                    <p className="ml-3 font-medium">At Facility 1</p>
+                    <p className="text-sm mb-3"> No. 60 - Alley 235</p>
+                    <p className="text-sm mb-3">Yen Hoa - Cau Giay District - Hanoi</p>
+                    <p className="text-sm mb-3"> Tel: 0988 833 653</p>
 
-                            {/* <img src="https://images.dmca.com/Badges/dmca-badge-w200-5x1-06.png?ID=a9ed0b5b-9ca8-4296-9ea8-7a325ebb0c78" alt="DMCA.com Protection Status"></a> */}
-                            <img src="https://images.dmca.com/Badges/dmca-badge-w200-5x1-06.png?ID=a9ed0b5b-9ca8-4296-9ea8-7a325ebb0c78" alt="" />
-                            <script type="text/javascript" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-6KG3TVGLY7&amp;l=dataLayer&amp;cx=c"></script><script type="text/javascript" src="https://cse.google.com/cse.js?cx=009719991472361915522:mv0hqzomq50"></script><script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"></script>
-                            <i className="fa fa-twitter fa-lg"></i>
-                            <a href="https://www.youtube.com/channel/UCDGVJ64_Uaqlqh2tA2JR-Gw" target="_blank" rel="nofollow"><i className="fa fa-youtube fa-lg"></i></a>
-                            <i className="fa fa-google-plus fa-lg"></i>
-                            <a href="https://www.facebook.com/305673666495263" target="_blank" rel="nofollow"><i className="fa fa-facebook fa-lg"></i></a>
-                            <i className="fa fa-bullseye fa-lg"></i>
-                        </div>
-                    </div>
+                    <p className="ml-3 font-medium">At Facility 2</p>
+                    <p className="text-sm mb-3"> No. 14 - Alley 12/13</p>
+                    <p className="text-sm mb-3">Luong Khanh Thien - Tuong Mai - Hoang Mai - Hanoi</p>
+                    <p className="text-sm mb-3"> Tel: 0353 326 266</p>
+                </div>
+                <div className="w-[300px] mt-0">
+                    <p className="text-xl text-center fontFooter text-green-600">Policy</p>
+                    <p className="text-sm mb-3"> 14 Days Warranty</p>
+                    <p className="text-sm mb-3"> Lifetime care support</p>
+                    <p className="text-sm mb-3"> Delivery</p>
+                </div>
+                <div className="w-[300px] mt-0">
+                    <p className="text-xl text-center fontFooter text-green-600">GET THE LATEST PRODUCT INFORMATION</p>
+                    <p className="text-xs">Please enter Email, we will send information and quote right away!</p>
+                    <form action="" className="flex">
+                        <input type="text" className="border outline-0 p-1" placeholder=" Enter your email"/>
+                        <button className="p-1 bg-lime-500 text-white font-medium">Send</button>
+                    </form>
                 </div>
             </footer>
         </div>

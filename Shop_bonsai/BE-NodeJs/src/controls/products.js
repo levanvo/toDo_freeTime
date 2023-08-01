@@ -9,6 +9,7 @@ const JoiProducts = joi.object({
     quantity: joi.number().required(),
     description: joi.string().required(),
     categoryID:joi.string().required(),
+    discount:joi.number().required(),
 });
 
 export const GetAll_PR = async (req, res) => {

@@ -10,11 +10,12 @@
 .header1 {
   width: 100%;
   height: 40px;
-  background: #008f247f;
+  background: #01c131f7;
 }
 
 .header2 {
   position: sticky;
+  z-index: 2;
   top: 0;
   width: 100vw;
   height: 80px;
@@ -23,3 +24,15 @@
 .font-menu{font-family: sans-serif;}
 .cart_menu{scale: 2 ;}
 .login_menu{scale: 1.5 ;}
+.fontFooter{font-family: fantasy;}
+.buy_cart{
+  position: absolute;
+  z-index: -1;
+  left: 33%;
+  top: 110%;
+  
+}
+.buy_cart:hover,.image_bonsai:hover + .buy_cart{
+  z-index: 1;
+  top: 85%;
+}

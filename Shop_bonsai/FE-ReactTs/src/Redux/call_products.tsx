@@ -7,7 +7,8 @@ const call_products = (state = Initial, action: any) => {
     return produce(state, draft => {
         switch (action.type) {
             case "fetchAPI":
-                return draft.dataPr = action.payload;
+                draft.dataPr = action.payload;
+                return;
             default:
                 return state;
         };

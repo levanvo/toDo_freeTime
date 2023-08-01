@@ -22,6 +22,10 @@ const SchemaProducts = mongoose.Schema(
             type: String,
             required: true
         },
+        discount: {
+            type: Number,
+            required: true
+        },
 
         categoryID: {
             type: mongoose.Types.ObjectId,
